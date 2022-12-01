@@ -16,7 +16,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!-- Swiper Js CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <!-- Google Fonts CDN  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -152,7 +156,7 @@
             </h1>
             <!-- Drop down menu  -->
             <div
-              class="absolute left-0 bg-white w-52 shadow-xl divide-y divide-gray-200 invisible opacity-0 transition-all duration-700 translate-y-7 group-hover:translate-y-0 group-hover:visible group-hover:opacity-100 z-50"
+              class="absolute left-0 bg-white w-52 shadow-xl divide-y divide-gray-300 divide-dashed invisible opacity-0 transition-all duration-700 translate-y-7 group-hover:translate-y-0 group-hover:visible group-hover:opacity-100 z-50"
             >
               <p
                 class="pl-5 space-x-2 py-2 text-lg font-medium tracking-wide transition duration-700 hover:bg-gray-100 cursor-pointer"
@@ -224,9 +228,105 @@
       </section>
       <!-- Nav bar section end  -->
       <!-- header slider section start  -->
-      <section></section>
+      <section>
+        <section class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide home-slider">
+              <div
+                class="h-auto"
+                style="
+                  background-image: url(images/banner-1.jpg);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div class="py-32 w-2/4 pl-20 space-y-5 text-gray-700">
+                  <h1 class="text-6xl font-semibold tracking-wide leading-1">
+                    Best Collection For Home Decoration
+                  </h1>
+                  <p class="text-lg font-normal text-black font-serif">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Omnis sunt pariatur vero assumenda architecto animi? Nemo
+                    animi quia explicabo enim!
+                  </p>
+                  <button
+                    class="bg-[#fd3d57] text-base uppercase text-white px-8 font-medium tracking-wide rounded-sm py-3 border border-[#fd3d57] transition-colors duration-1000 hover:bg-transparent hover:text-[#fd3d57]"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide home-slider">
+              <div
+                class="h-auto"
+                style="
+                  background-image: url(images/banner-2.jpg);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div class="py-32 w-2/4 pl-20 space-y-5 text-gray-700">
+                  <h1 class="text-6xl font-semibold tracking-wide leading-1">
+                    Best Collection For Home Decoration
+                  </h1>
+                  <p class="text-lg font-normal text-black font-serif">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Omnis sunt pariatur vero assumenda architecto animi? Nemo
+                    animi quia explicabo enim!
+                  </p>
+                  <button
+                    class="bg-[#fd3d57] text-base uppercase text-white px-8 font-medium tracking-wide rounded-sm py-3 border border-[#fd3d57] transition-colors duration-1000 hover:bg-transparent hover:text-[#fd3d57]"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide home-slider">
+              <div
+                class="h-auto"
+                style="
+                  background-image: url(images/banner-3.jpg);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div class="py-32 w-2/4 pl-20 space-y-5 text-gray-700">
+                  <h1 class="text-6xl font-semibold tracking-wide leading-1">
+                    Best Collection For Home Decoration
+                  </h1>
+                  <p class="text-lg font-normal text-black font-serif">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Omnis sunt pariatur vero assumenda architecto animi? Nemo
+                    animi quia explicabo enim!
+                  </p>
+                  <button
+                    class="bg-[#fd3d57] text-base uppercase text-white px-8 font-medium tracking-wide rounded-sm py-3 border border-[#fd3d57] transition-colors duration-1000 hover:bg-transparent hover:text-[#fd3d57]"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </section>
+      </section>
       <!-- header slider section end  -->
     </header>
     <!-- header section end  -->
+
+    <!-- Custom Js File  -->
+    <script src="JS/Script.js"></script>
+
+    <!-- swiper js slider  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>
