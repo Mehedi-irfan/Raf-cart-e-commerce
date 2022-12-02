@@ -1,13 +1,11 @@
 // swiper js slider script
-var swiper = new Swiper(".home-slider", {
+var swiper = new Swiper(".mySwiper", {
   loop: true,
-  grabCursor: true,
+  autoplay: {
+    delay: 5000,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
   },
 });
