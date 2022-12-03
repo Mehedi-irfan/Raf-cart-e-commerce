@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- custom tailwind css link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awesome Cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Swiper Js CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Google Fonts CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Raf-Cart Contact Us</title>
+  </head>
+  <body>
+    <!-- header section start  -->
+    <header>
+      <!-- top header section  -->
+      <div
+        class="container mx-auto px-5 lg:px-10 py-2 lg:py-6 flex justify-between items-center"
+      >
+        <div class="image">
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <!-- search bar  -->
+        <div
+          class="lg:flex border hidden border-[#fd3d57] rounded-l-md rounded-r-md"
+        >
+          <div
+            class="flex justify-between gap-7 border-r py-2 px-8 border-[#fd3d57]"
+          >
+            <p class="font-poppins text-lg">All category</p>
+            <span class="flex items-center"
+              ><i class="fa-shap fa-solid fa-angle-down"></i
+            ></span>
+          </div>
+          <div class="flex items-center">
+            <input
+              class="px-10 outline-none focus:outline-none"
+              type="text "
+              placeholder="Search Here...."
+            />
+            <input
+              class="text-lg font-poppins px-14 tracking-wider border-l border-[#fd3d57] py-2 bg-[#fd3d57] text-white hover:bg-transparent hover:text-[#fd3d57] transition duration-1000"
+              type="submit"
+              value="Search"
+            />
+          </div>
+        </div>
+        <!-- cart and account  -->
+        <div class="flex items-center lg:space-x-7 space-x-3">
+          <div class="text-2xl text-center relative cursor-pointer">
+            <i class="fa-regular fa-heart"></i>
+            <span
+              class="absolute -top-1 right-0 text-xs bg-[#fd3d57] h-5 w-5 rounded-full flex items-center justify-center text-white"
+              >3</span
+            >
+            <p class="text-xs">Wish List</p>
+          </div>
+          <div class="text-2xl text-center relative cursor-pointer">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span
+              class="absolute -top-1 -right-3 text-xs bg-[#fd3d57] h-5 w-5 rounded-full flex items-center justify-center text-white"
+              >5</span
+            >
+            <p class="text-xs">Cart</p>
+          </div>
+          <div class="text-2xl text-center relative cursor-pointer group">
+            <i class="fa-regular fa-user"></i>
+            <p class="text-xs">Account</p>
+            <!-- login profile  -->
+            <div
+              class="absolute bg-white shadow-md w-56 py-4 px-2 rounded-b-md right-0 opacity-0 invisible transition duration-1000 translate-y-6 group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible z-50 border-t-4 border-[#fb3d57]"
+            >
+              <h5 class="text-base font-poppins font-medium">
+                Welcome to RAFCART Shop
+              </h5>
+              <div class="my-2 space-x-1">
+                <button
+                  class="text-base text-white border bg-[#fd3d57] px-6 py-1 rounded-sm transition duration-1000 hover:bg-transparent hover:text-[#fd3d57] hover:border hover:border-[#fd3d57]"
+                >
+                  JOIN
+                </button>
+                <button
+                  class="text-base text-[#fd3d57] border border-[#fd3d57] px-6 py-1 rounded-sm transition duration-1000 hover:bg-[#fd3d57] hover:text-white"
+                >
+                  SING IN
+                </button>
+              </div>
+              <div class="text-start space-y-1 pl-1 my-2">
+                <p
+                  class="text-base space-x-2 text-gray-700 font-normal tracking-wide transition-colors duration-1000 hover:text-[#fd3d57]"
+                >
+                  <i class="fa-regular fa-user"></i>
+                  <span>My Account</span>
+                </p>
+                <p
+                  class="text-base space-x-2 text-gray-700 font-normal transition-colors duration-1000 tracking-wide hover:text-[#fd3d57]"
+                >
+                  <i class="fa-solid fa-gift"></i>
+                  <span>My Order</span>
+                </p>
+                <p
+                  class="text-base space-x-2 text-gray-700 font-normal tracking-wide transition-colors duration-1000 hover:text-[#fd3d57]"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <span>My Wishlist</span>
+                </p>
+                <p
+                  class="text-base space-x-2 text-gray-700 font-normal tracking-wide transition-colors duration-1000 hover:text-[#fd3d57]"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>My Cart</span>
+                </p>
+                <p
+                  class="text-base space-x-2 text-gray-700 font-normal tracking-wide transition-colors duration-1000 hover:text-[#fd3d57]"
+                >
+                  <i class="fa-solid fa-power-off"></i>
+                  <span>Log Out</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- top header section  -->
+      <!-- Nav bar section start  -->
+      <section class="bg-[#2b2d42]">
+        <div
+          class="container mx-auto lg:px-10 flex justify-between items-center relative"
+        >
+          <div class="relative group">
+            <h1
+              class="text-white lg:space-x-2 space-x-1 text-base lg:text-lg bg-[#fd3d57] py-3 px-6 cursor-pointer"
+            >
+              <i class="fa-solid fa-bars"></i>
+              <span class="font-medium tracking-wide">All Categories</span>
+            </h1>
+            <!-- Drop down menu  -->
+            <div
+              class="absolute left-0 bg-white w-52 shadow-xl divide-y divide-gray-300 divide-dashed invisible opacity-0 transition-all duration-700 translate-y-7 group-hover:translate-y-0 group-hover:visible group-hover:opacity-100 z-50"
+            >
+              <p
+                class="pl-5 space-x-2 py-2 text-lg font-medium tracking-wide transition duration-700 hover:bg-gray-100 cursor-pointer"
+              >
+                <i
+                  class="fa-solid fa-shoe-prints transform -rotate-90 text-[#f4cad0]"
+                ></i>
+                <span class="text-gray-500">Shoes</span>
+              </p>
+              <p
+                class="pl-5 space-x-2 py-2 text-lg font-medium tracking-wide transition duration-700 hover:bg-gray-100 cursor-pointer"
+              >
+                <i class="fa-solid fa-person text-[#f4cad0]"></i>
+                <span class="text-gray-500">Men</span>
+              </p>
+              <p
+                class="pl-5 space-x-2 py-2 text-lg font-medium tracking-wide transition duration-700 hover:bg-gray-100 cursor-pointer"
+              >
+                <i class="fa-solid fa-person-dress text-[#f4cad0]"></i>
+                <span class="text-gray-500">Women</span>
+              </p>
+              <p
+                class="pl-5 space-x-2 py-2 text-lg font-medium tracking-wide transition duration-700 hover:bg-gray-100 cursor-pointer"
+              >
+                <i class="fa-solid fa-plug text-[#f4cad0]"></i>
+                <span class="text-gray-500">Electronics</span>
+              </p>
+              <p
+                class="pl-5 space-x-2 py-2 text-lg font-medium tracking-wide transition duration-700 hover:bg-gray-100 cursor-pointer"
+              >
+                <i class="fa-solid fa-headphones text-[#f4cad0]"></i>
+                <span class="text-gray-500">Headphones</span>
+              </p>
+              <p
+                class="pl-5 space-x-2 py-2 text-lg font-medium tracking-wide transition duration-700 hover:bg-gray-100 cursor-pointer"
+              >
+                <i class="fa-solid fa-headphones text-[#f4cad0]"></i>
+                <span class="text-gray-500">Watches</span>
+              </p>
+            </div>
+          </div>
+          <div class="lg:flex flex-auto hidden ml-28">
+            <nav>
+              <ul class="flex space-x-8 text-white text-lg cursor-pointer">
+                <li class="tracking-wide transition hover:text-[#fd3d57]">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="tracking-wide transition hover:text-[#fd3d57]">
+                  <a href="shop.html">Shop</a>
+                </li>
+                <li class="tracking-wide transition hover:text-[#fd3d57]">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li class="tracking-wide transition hover:text-[#fd3d57]">
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <h6
+              class="text-white lg:text-base text-base space-x-1 mr-5 lg:mr-0 tracking-wide lg:space-x-1"
+            >
+              <i class="fa-solid fa-phone"></i>
+              <span>Call: +123 456 7890</span>
+            </h6>
+          </div>
+        </div>
+      </section>
+      <!-- Nav bar section end  -->
+      <!-- about header banner start  -->
+      <section
+        class="h-96"
+        style="
+          background-image: url(images/about-banner.jpg);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="container mx-auto lg:px-10 px-6">
+          <div class="flex justify-center items-center space-x-3 h-96">
+            <a href="index.html" class="text-base text-[#fd3d57]"
+              ><i class="fas fa-home"></i
+            ></a>
+            <p class="text-base text-white">
+              <i class="fas fa-chevron-right"></i>
+            </p>
+            <h3 class="font-medium text-white tracking-wider text-lg uppercase">
+              Contact Us
+            </h3>
+          </div>
+        </div>
+      </section>
+      <!-- about header banner end  -->
+    </header>
+    <!-- header section end  -->
+
+    <!-- main section start  -->
+    <!-- Footer section start  -->
+    <section class="border-t border-gray-300">
+      <div class="container mx-auto lg:px-10 px-6 lg:py-10 py-10">
+        <div
+          class="grid lg:grid-cols-4 grid-cols-1 gap-4 lg:space-y-0 space-y-4"
+        >
+          <div>
+            <img src="images/logo.svg" alt="" />
+            <p class="my-4 text-base font-normal tracking-wide text-gray-600">
+              Lorem ipsum, or lipsum as it is sometimes kno wn, is dummy text
+              used in laying out print, gra phic or web designs the passage.
+            </p>
+            <h1 class="text-2xl font-semibold tracking-wide my-3 text-gray-700">
+              NEWSLETTER
+            </h1>
+            <div class="flex">
+              <input
+                class="px-2 border border-[#fd3d57] outline-none focus:outline-none"
+                type="text"
+                placeholder="Email Address"
+              />
+              <input
+                class="py-2 px-4 border border-[#fd3d57] bg-[#fd3d57] text-white transition duration-700 hover:bg-transparent hover:text-[#fd3d57]"
+                type="submit"
+                value="SUBSCRIBE"
+              />
+            </div>
+          </div>
+
+          <div class="lg:ml-12">
+            <h1
+              class="text-2xl font-medium tracking-wide uppercase text-gray-600"
+            >
+              My Account
+            </h1>
+            <ul class="mt-5 space-y-3">
+              <li
+                class="font-medium tracking-wide transition duration-700 text-gray-500 hover:text-[#fd3d57] cursor-pointer hover:transform hover:translate-x-1"
+              >
+                Orders
+              </li>
+              <li
+                class="font-medium tracking-wide transition duration-700 text-gray-500 hover:text-[#fd3d57] cursor-pointer hover:transform hover:translate-x-1"
+              >
+                Wishlist
+              </li>
+              <li
+                class="font-medium tracking-wide transition duration-700 text-gray-500 hover:text-[#fd3d57] cursor-pointer hover:transform hover:translate-x-1"
+              >
+                Track Order
+              </li>
+              <li
+                class="font-medium tracking-wide transition duration-700 text-gray-500 hover:text-[#fd3d57] cursor-pointer hover:transform hover:translate-x-1"
+              >
+                Manage Account
+              </li>
+              <li
+                class="font-medium tracking-wide transition duration-700 text-gray-500 hover:text-[#fd3d57] cursor-pointer hover:transform hover:translate-x-1"
+              >
+                Return Order
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:ml-2">
+            <h1
+              class="text-2xl font-medium tracking-wide uppercase text-gray-600"
+            >
+              INFORMATION
+            </h1>
+            <ul class="mt-5 space-y-3">
+              <li
+                class="font-medium tracking-wide transition duration-700 text-gray-500 hover:text-[#fd3d57] cursor-pointer hover:transform hover:translate-x-1"
+              >
+                About Us
+              </li>
+              <li
+                class="font-medium tracking-wide transition duration-700 text-gray-500 hover:text-[#fd3d57] cursor-pointer hover:transform hover:translate-x-1"
+              >
+                Return Policy
+              </li>
+              <li
+                class="font-medium tracking-wide transition duration-700 text-gray-500 hover:text-[#fd3d57] cursor-pointer hover:transform hover:translate-x-1"
+              >
+                Terms & Condition
+              </li>
+              <li
+                class="font-medium tracking-wide transition duration-700 text-gray-500 hover:text-[#fd3d57] cursor-pointer hover:transform hover:translate-x-1"
+              >
+                Privacy Policy
+              </li>
+              <li
+                class="font-medium tracking-wide transition duration-700 text-gray-500 hover:text-[#fd3d57] cursor-pointer hover:transform hover:translate-x-1"
+              >
+                FAQ
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:ml-2">
+            <h1
+              class="text-2xl font-medium tracking-wide uppercase text-gray-600"
+            >
+              CONTACT
+            </h1>
+            <div class="mt-4">
+              <div class="flex space-x-4">
+                <span class="text-gray-600">
+                  <i class="fa-solid fa-location-dot"></i
+                ></span>
+                <p>
+                  7895 Dr New Albuquerue, NM 19800, United States Of America
+                </p>
+              </div>
+
+              <div class="flex space-x-4 my-3">
+                <span class="text-gray-600"
+                  ><i class="fa-solid fa-phone"></i
+                ></span>
+                <p>+566 477 256, +566 254 575</p>
+              </div>
+
+              <div class="flex space-x-4 items-center">
+                <span class="text-gray-600"
+                  ><i class="fa-solid fa-envelope"></i
+                ></span>
+                <p>info@domain.com</p>
+              </div>
+
+              <div class="flex space-x-3 mt-4">
+                <p
+                  class="h-8 w-8 bg-[#3B5998] flex justify-center items-center text-white rounded-full text-sm"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </p>
+                <p
+                  class="h-8 w-8 bg-[#00ACEE] flex justify-center items-center text-white rounded-full text-sm"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </p>
+                <p
+                  class="h-8 w-8 bg-[#D53982] flex justify-center items-center text-white rounded-full text-sm"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer section end  -->
+
+    <!-- Bottom footer section start  -->
+    <section class="bg-[#2b2d42]">
+      <div class="container mx-auto lg:px-10 px-6 py-3">
+        <div
+          class="lg:flex justify-between items-center space-y-3 lg:space-y-0"
+        >
+          <h1
+            class="text-white text-lg tracking-wide lg:text-start text-center"
+          >
+            © IRFAN - All Rights Reserved
+          </h1>
+          <img
+            class="h-8 lg:w-[30%] w-full"
+            src="images/payment-method.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Bottom footer section end  -->
+    <!-- main section end -->
+
+    <!-- swiper js swiper-slide  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom Js File  -->
+    <script src="JS/Script.js"></script>
+  </body>
+</html>
